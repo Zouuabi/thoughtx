@@ -11,7 +11,6 @@ class ThoughtItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 70,
       decoration: BoxDecoration(
           color: const Color.fromARGB(50, 97, 97, 97),
           borderRadius: BorderRadius.circular(30),

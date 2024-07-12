@@ -20,11 +20,15 @@ class HomePage extends StatelessWidget {
         //   preferredSize: Size(MediaQuery.sizeOf(context).width * 0.7, 81),
         // ),
 
-        body: SafeArea(child: HomeView(homeController: homeController)),
+        body: SafeArea(
+          child: HomeView(
+            homeController: homeController,
+          ),
+        ),
         bottomNavigationBar: BottomNavigationBar(
-          items: [
-            BottomNavigationBarItem(icon: Icon(Icons.home), label: ''),
-            BottomNavigationBarItem(icon: Icon(Icons.person), label: '')
+          items: const [
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+            BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile')
           ],
         ),
       ),
@@ -72,7 +76,8 @@ class HomeView extends StatelessWidget {
               flex: 2,
               child: ThoughtxField(
                 onFinished: (thought) {
-                  homeController.addThought(content: thought);
+                  // homeController.addThought(content: thought);
+                  homeController.generateTodo(message: thought);
                 },
               ),
             ),
