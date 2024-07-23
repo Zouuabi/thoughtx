@@ -29,7 +29,8 @@ class _ThoughtxFieldState extends State<ThoughtxField> {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
+    return Container(
+      margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
       width: MediaQuery.sizeOf(context).width * 0.8,
       height: 70,
       child: TextField(
