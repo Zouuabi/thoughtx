@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:thoughtx/src/home/home_contoller.dart';
+import 'package:thoughtx/src/home/llm_agent.dart';
 
 import 'src/app.dart';
 import 'src/settings/settings_controller.dart';
@@ -10,6 +11,8 @@ void main() async {
   // Flutter Widgets.
   final settingsController = SettingsController(SettingsService());
   final homeContoller = HomeController();
+
+  LlmAgent();
 
   // Load the user's preferred theme while the splash screen is displayed.
   // This prevents a sudden theme change when the app is first displayed.
