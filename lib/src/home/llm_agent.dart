@@ -9,7 +9,7 @@ class LlmAgent {
   LlmAgent._internal() {
     model = GenerativeModel(
         model: 'gemini-1.5-flash',
-        apiKey: 'AIzaSyCd6tr9GVfzNDM1HlyGSKrWlSt82TeM0Wk',
+        apiKey: '',
         generationConfig: GenerationConfig(
             responseMimeType: 'application/json', responseSchema: schema),
         systemInstruction: Content.system(
